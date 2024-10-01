@@ -64,7 +64,7 @@ class EmpleadoTest {
 	}
 	
 	@Test
-	void testCalculoNominaBrutaV600E() { //vendedor, <1000 en ventas y 10 Horas extra
+	void testCalculoNominaBrutaV500E() { //vendedor, <1000 en ventas y 10 Horas extra
 		
 		float expected = 2300f;
 		float actual = Empleado.calculoNominaBruta(TipoEmpleado.Vendedor, 500, 10);
@@ -72,7 +72,7 @@ class EmpleadoTest {
 	}
 	
 	@Test
-	void testCalculoNominaBrutaV600() { //vendedor, <1000 en ventas y no Horas extra
+	void testCalculoNominaBrutaV500() { //vendedor, <1000 en ventas y no Horas extra
 		
 		float expected = 2000f;
 		float actual = Empleado.calculoNominaBruta(TipoEmpleado.Vendedor, 500, 0);
@@ -112,7 +112,7 @@ class EmpleadoTest {
 	}
 	
 	@Test
-	void testCalculoNominaBrutaE600E() { //encargado, <1000 en ventas y 10 Horas extra
+	void testCalculoNominaBrutaE500E() { //encargado, <1000 en ventas y 10 Horas extra
 		
 		float expected = 2800f;
 		float actual = Empleado.calculoNominaBruta(TipoEmpleado.Encargado, 500, 10);
@@ -120,7 +120,7 @@ class EmpleadoTest {
 	}
 	
 	@Test
-	void testCalculoNominaBrutaE600() { //encargado, <1000 en ventas y no Horas extra
+	void testCalculoNominaBrutaE500() { //encargado, <1000 en ventas y no Horas extra
 		
 		float expected = 2500f;
 		float actual = Empleado.calculoNominaBruta(TipoEmpleado.Encargado, 500, 0);
@@ -147,7 +147,7 @@ class EmpleadoTest {
 	void testCalculoNominaNeta1500() { //<2100
 
 		float expected = 1500f;
-		float actual = Empleado.calculoNominaNeta(2100);
+		float actual = Empleado.calculoNominaNeta(1500);
 		assertEquals(expected, actual);
 	}
 }
